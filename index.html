@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미니프로젝트</title>
+    <style>
+        *{
+            margin: 10;
+            padding: 4px;
+        }
+        .title{
+
+            border-bottom: dashed 1px gray;
+            width: 600px; 
+            color: teal;
+            padding: 0px;
+        }
+        #sub{
+            width: 600px;
+            padding: 7px;
+            margin: 8px 0 0 4px;
+            background-color:mintcream;
+            border: solid 1px teal;
+            
+        }
+        #book{
+            display: inline-block;
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul.mid{
+            width: 600px;
+            padding:7px;
+            margin: 8px 0 0 4px;
+            text-align: center;
+        }
+        #menu{
+            width: 800px;
+            padding: 4px;
+            margin: 4px;
+            margin: 20p 0 0 50px;
+            background-color:teal;
+            color: white;
+        }
+        #menu li{
+            display: inline;
+            
+        }
+        .green{
+            color:mediumseagreen;
+            font-weight: bold;
+        }
+        .img{
+            box-shadow: 6px 6px 6px lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <img src="img/title.png" width="150">
+        <select title="" onchange="window.open(value,'_self');">
+            <option value="index.html">7주차 수업</option>
+            <option value="index.html">미니프로젝트</option>
+            <option value="banner.html">배너</option>
+            <option value="display.html">디스플레이</option>
+            <option value="inline_block.html">인라인 블록</option>
+        </select>
+        <li> 독자 이벤트 | </li>
+        <li> 커뮤니티 | </li>
+        <li> 그룹소개 | </li>
+        <li> 질의응답 | </li>
+        <li> 스폰서 | </li>
+    </ul>
+
+    <ul id="book">
+        <img class="img" src="img/book.jpg">      
+        <img class="img" src="img/book3.png">
+        <img class="img" src="img/book2.png">
+    </ul>
+    <ul>
+        
+    </ul>
+    
+    <h2 class="title">이벤트 안내</h2>
+    <h3>1. 민음사 패밀리데이</h3>
+    <ul id="sub">
+        <li>민음사 패밀리데이는 1년에 2회!</li>
+        <li>오프라인(상반기)과 온라인(하반기)으로 진행되는<span class=".green">민음사 최대 도서 판매 행사입니다!</span></li>
+    </ul>
+    <ul class="mid">
+        <img class="img" src="img/family.png" width="400">
+        <p>&lt;민음사 패밀리데이&gt;</p>
+    </ul>
+
+    
+    <h3>2. 민음사 X 독립서점</h3>
+    <ul id="sub">
+        <li>편집자의 이야기가 담긴 레터는 오직 동네서점에서만!</li>
+        <li>레터 뒤에는 선물하기 좋은 문장이 숨어있습니다. 지금 떠오르는 사람에게 마음을 전해봐요.</span></li>
+    </ul>
+    <ul class="mid">
+        <img class="img" src="img/bookstore.jpg" width="400">
+        <p>&lt;민음사 x 동네서점&gt;</p>
+    </ul>
+
+    <h3>3. 북클럽 웰컴 도서</h3>
+    <ul id="sub">
+        <li>마음을 이끄는 문장으로 고르는 2025 북클럽 웰컴 도서</li>
+        <li>세계문학전집 +  오늘의 젊은 작가 + 세계시인선 + 쏜살문고 그리고 한편 시리즈까지!</li>
+    </ul>
+    <ul class="mid">
+        <img class="img" src="img/welcome.JPG" width="400">
+        <p>&lt;2025 북클럽 웰컴 도서&gt;</p>
+    </ul>
+</body>
+</html>

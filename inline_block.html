@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인, 블록 테그</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #menu{
+            width:500px;
+            padding:10px;
+            margin:20px 0 0 40px;
+            background-color: #eeeeee;
+            border:solid 1px #aaaaaa;
+            text-align: center;
+        }
+        #menu li{
+            display: inline;
+        }
+        a{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <body>
+        <ul id="menu">
+            <img src="img/title.png" width="150">
+            <select title="" onchange="window.open(value,'_self');">
+                <option value="index.html">7주차 수업</option>
+                <option value="index.html">미니프로젝트</option>
+                <option value="banner.html">배너</option>
+                <option value="display.html">디스플레이</option>
+                <option value="inline_block.html">인라인 블록</option>
+            </select>
+            <li> 독자 이벤트 | </li>
+            <li> 커뮤니티 | </li>
+            <li> 그룹소개 | </li>
+            <li> 질의응답 | </li>
+            <li> 스폰서 | </li>
+        </ul>
+    
+    <ul id="menu">
+        <li href="">회사소개 | </li>
+        <li>제품소개 | </li>
+        <li>공지사항 | </li>
+        <li>업무제휴 | </li>
+        <li>고객센터 | </li>
+    </ul>
+    <h2>인라인과 블록</h2>
+     <h3>1. 인라인요소</h3>
+     <span>텍스트1</span>
+     <span>텍스트2</span>
+     <span>텍스트3</span>
+     <img src="book.png">
+    <h3>2. 블록 요소</h3>
+    <p>이것은 단락입니다</p>
+    <div>박스 1</div>
+    <div>박스 2</div>
+
+    <p>수직 방향 메뉴 :</p>
+        <a href="http://naver.com" target="_blank">네이버</a>
+        <a href="http://daum.net" target="_blank">다음</a>
+        <a href="http://minumsa.com" target="_blank">민음사</a>
+</body>
+</html>
