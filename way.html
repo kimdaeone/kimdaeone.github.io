@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왕릉 순례 - 조선왕릉 관광 가이드</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .topnav {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        }
+        .topnav a {
+        color: #f2f2f2;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        .topnav a.active {
+        color: #ffc000;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
+        .header {
+        position: relative;
+        background-image: url('./img/태강릉.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 6px #000;
+        }
+        .header h1 {
+        font-size: 48px;
+        margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            width: 100%;
+        }
+        
+        .footer {
+        background: #ddd;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+        }
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .header, h1, .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 800px){
+            h1{
+                font-size:50px;
+            }
+            .topnav{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="introduce.html">왕릉소개</a>
+    <a href="way.html" class="active">왕릉 순례</a>
+    <a href="cumu.html">대자보</a>
+    <a href="surport.html">왕릉 길라잡이</a>
+    <a href="namu.html">왕릉 잡학사전</a>
+  </div>
+    <div class="header">
+        <h1>왕릉 순례</h1>
+    </div>
+
+    <div class="content">
+        <select onchange="if(this.value) window.location.href=this.value;">
+            <option value="">왕릉을 선택하세요</option>
+            <option value="way.html">구리 동구릉</option>
+            <option value="#">서울 정릉 (미구현)</option>
+            <option value="#">파주 장릉 (미구현)</option>
+            <option value="#">남양주 광릉 (미구현)</option>
+            <option value="#">서울 의릉 (미구현)</option>
+            <option value="#">서울 태릉·강릉 (미구현)</option>
+            <option value="#">서울 헌인릉 (미구현)</option>
+            <option value="#">서울 서오릉 (미구현)</option>
+        </select>
+
+        <div class="card">
+            <h2>카페동구릉</h2>
+            <img class="fakeimg" src="img/cafe.jpg">
+            <p>왕릉 인근에 위치한 조용하고 분위기 있는 카페를 소개합니다. 산책 후 휴식을 취하기 좋은 장소입니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>동칼</h2>
+            <img class="fakeimg" src="img/cafeterria.jpg">
+            <p>전통 한식부터 캐주얼 다이닝까지 다양한 식당 정보를 제공해 드립니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>조선왕릉 축전</h2>
+            <img class="fakeimg" src="img/chook.png">
+            <p>왕릉의 아름다운 자연과 건축물을 배경으로 인생샷을 남길 수 있는 장소를 추천합니다.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+    </footer>
+</body>
+</html>

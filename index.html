@@ -3,118 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>미니프로젝트</title>
+    <title>Joseon Tomb Guide</title>
     <style>
-        *{
-            margin: 10;
-            padding: 4px;
+        * {
+        box-sizing: border-box;
         }
-        .title{
+        body {
+        font-family: 'Noto Sans KR', Arial, sans-serif;
+        margin: 0;
+        background: #f1f1f1;
+        }
+        
+        /* 상단바 */
+        .topnav {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        }
+        .topnav a {
+        color: #f2f2f2;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        .topnav a.active {
+        color: #ffc000;
+        font-weight: bold;
+        text-decoration: underline;
+        }
 
-            border-bottom: dashed 1px gray;
-            width: 600px; 
-            color: teal;
-            padding: 0px;
+        /* 헤더 이미지 */
+        .header {
+        position: relative;
+        background-image: url('./img/index_back.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 6px #000;
         }
-        #sub{
-            width: 600px;
-            padding: 7px;
-            margin: 8px 0 0 4px;
-            background-color:mintcream;
-            border: solid 1px teal;
-            
+        .header h1 {
+        font-size: 48px;
+        margin: 0;
         }
-        #book{
-            display: inline-block;
-
-        }
-        ul{
-            list-style-type: none;
-        }
-        ul.mid{
-            width: 600px;
-            padding:7px;
-            margin: 8px 0 0 4px;
+        .link{
+          overflow: hidden;
+            background-color: #333;
             text-align: center;
-        }
-        #menu{
-            width: 800px;
-            padding: 4px;
-            margin: 4px;
-            margin: 20p 0 0 50px;
-            background-color:teal;
-            color: white;
-        }
-        #menu li{
-            display: inline;
-            
-        }
-        .green{
-            color:mediumseagreen;
-            font-weight: bold;
-        }
-        .img{
-            box-shadow: 6px 6px 6px lightgray;
+            object-fit: cover;
+            overflow:hidden;
         }
 
+        .leftcolumn{
+            float: left;
+            width: 75%;
+            background-color: #f1f1f1;
+        }
+        .rightcolumn{
+            float:left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left:20px;
+        }
+
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding:0;
+        }
+        
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* footer */
+        .footer {
+        background: #ddd;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+        }
+
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .header, h1, .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 800px){
+            h1{
+                font-size:50px;
+            }
+            .topnav{
+                font-size: 20px;
+            }
+        }
+
+        
     </style>
 </head>
 <body>
-    <ul id="menu">
-        <img src="img/title.png" width="150">
-        <select title="" onchange="window.open(value,'_self');">
-            <option value="index.html">7주차 수업</option>
-            <option value="index.html">미니프로젝트</option>
-            <option value="banner.html">배너</option>
-            <option value="display.html">디스플레이</option>
-            <option value="inline_block.html">인라인 블록</option>
-        </select>
-        <li> 독자 이벤트 | </li>
-        <li> 커뮤니티 | </li>
-        <li> 그룹소개 | </li>
-        <li> 질의응답 | </li>
-        <li> 스폰서 | </li>
-    </ul>
-
-    <ul id="book">
-        <img class="img" src="img/book.jpg">      
-        <img class="img" src="img/book3.png">
-        <img class="img" src="img/book2.png">
-    </ul>
-    <ul>
+    <!--상단 메뉴-->
+  <div class="topnav">
+    <a href="index.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="introduce.html">왕릉소개</a>
+    <a href="way.html">왕릉 순례</a>
+    <a href="cumu.html">대자보</a>
+    <a href="surport.html">왕릉 길라잡이</a>
+    <a href="namu.html">왕릉 잡학사전</a>
+  </div>
+    <ul class="header">
+        <a class="header-img" href="introduce.html"></a><h1>동쪽에 자리잡은 9개의 무덤 동구릉</h1><br>
         
     </ul>
-    
-    <h2 class="title">이벤트 안내</h2>
-    <h3>1. 민음사 패밀리데이</h3>
-    <ul id="sub">
-        <li>민음사 패밀리데이는 1년에 2회!</li>
-        <li>오프라인(상반기)과 온라인(하반기)으로 진행되는<span class=".green">민음사 최대 도서 판매 행사입니다!</span></li>
-    </ul>
-    <ul class="mid">
-        <img class="img" src="img/family.png" width="400">
-        <p>&lt;민음사 패밀리데이&gt;</p>
-    </ul>
 
-    
-    <h3>2. 민음사 X 독립서점</h3>
-    <ul id="sub">
-        <li>편집자의 이야기가 담긴 레터는 오직 동네서점에서만!</li>
-        <li>레터 뒤에는 선물하기 좋은 문장이 숨어있습니다. 지금 떠오르는 사람에게 마음을 전해봐요.</span></li>
-    </ul>
-    <ul class="mid">
-        <img class="img" src="img/bookstore.JPG" width="400">
-        <p>&lt;민음사 x 동네서점&gt;</p>
-    </ul>
 
-    <h3>3. 북클럽 웰컴 도서</h3>
-    <ul id="sub">
-        <li>마음을 이끄는 문장으로 고르는 2025 북클럽 웰컴 도서</li>
-        <li>세계문학전집 +  오늘의 젊은 작가 + 세계시인선 + 쏜살문고 그리고 한편 시리즈까지!</li>
-    </ul>
-    <ul class="mid">
-        <img class="img" src="img/welcome.JPG" width="400">
-        <p>&lt;2025 북클럽 웰컴 도서&gt;</p>
-    </ul>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card" style="cursor: pointer;" onclick="location.href='cumu.html'">
+                <h2>대자보</h2>
+                <h4>바쁜 강남 속 가장 느린 공간 선정릉</h5>
+                <img class="fakeimg" src="img/선정릉1.png">
+                <p>선릉과 정릉</p>
+                <p>서울특별시 강남구 선릉로 100길</p>
+            </div>
+            <div class="card">
+                <h2>대자보</h2>
+                <h5>마음의 안식처 영릉</h5>
+                <img class="fakeimg" src="img/intro.jpg">
+                <p>영릉</p>
+                <p>경기도 여주시 세종대왕면 영릉로 269-50</p>
+            </div>
+        </div>
+        
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>정자각</h3>
+                <img class="fakeimg" src="img/jung.jpg">
+                <p>조선왕릉에서 제사를 지내는 정자각은 ‘丁’..</p>
+            </div>
+            <div class="card">
+                <h3>왕릉 잡학사전</h3>
+                <p>삼배고두례</p>
+                <img class="fakeimg" src="img/sam.jpg">
+
+            </div>
+            <div class="card">
+                <h3>이달의 왕릉</h3>
+                <p>태강릉</p>
+                <img class="fakeimg" src="img/태강릉.jpg">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+    </footer>
 </body>
 </html>

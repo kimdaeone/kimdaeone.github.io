@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왕릉 길라잡이</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .topnav {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        }
+        .topnav a {
+        color: #f2f2f2;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        .topnav a.active {
+        color: #ffc000;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
+        .header {
+        position: relative;
+        background-image: url('./img/yung.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 6px #000;
+        }
+        .header h1 {
+        font-size: 48px;
+        margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        select, button {
+            margin-top: 10px;
+            padding: 5px;
+        }
+        ul.calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.calendar li {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+        }
+        .options {
+            margin-top: 10px;
+            display: none;
+        }
+
+        .footer {
+        background: #ddd;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+        }
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .header, h1, .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 800px){
+            h1{
+                font-size:50px;
+            }
+            .topnav{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="introduce.html">왕릉소개</a>
+    <a href="way.html">왕릉 순례</a>
+    <a href="cumu.html">대자보</a>
+    <a href="surport.html" class="active">왕릉 길라잡이</a>
+    <a href="namu.html">왕릉 잡학사전</a>
+  </div>
+
+    <div class="header">
+        <h1>왕릉 길라잡이</h1>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>관람 정보 예약</h2>
+            <label for="tombs">왕릉 선택:</label>
+            <select id="tombs">
+                <option>동구릉</option>
+                <option disabled>건원릉</option>
+                <option disabled>태릉</option>
+                <option disabled>강릉</option>
+                <option disabled>홍릉</option>
+                <option disabled>유릉</option>
+                <option disabled>장릉</option>
+                <option disabled>의릉</option>
+                <option disabled>선릉</option>
+                <option disabled>정릉</option>
+                <!-- 조선왕릉 전체를 추가한 후 구현은 동구릉만 -->
+            </select>
+
+            <h3>날짜 선택</h3>
+            <ul class="calendar">
+                <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li>
+                <li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li>
+                <li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li>
+                <li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li>
+                <li>29</li><li>30</li>
+            </ul>
+
+            <div class="form-section hidden" id="guide-options">
+                <h3>가이드 유형 선택</h3>
+                <label><input type="checkbox" name="option" /> 오디오 가이드</label>
+                <label><input type="checkbox" name="option" /> 1일 관광가이드</label>
+                <label><input type="checkbox" name="option" /> 해설사</label>
+
+                <h3>예약자 정보 입력</h3>
+                <input type="text" id="name" placeholder="이름 입력" required />
+                <input type="tel" id="phone" placeholder="전화번호 입력" required />
+
+                <button onclick="alert('예약이 완료되었습니다!\n입금 계좌: 카카오뱅크 3333-15-3590077')">
+                예약하기
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+    </footer>
+</body>
+</html>

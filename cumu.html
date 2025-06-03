@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>조선왕릉 대자보</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      margin: 0;
+      background: #f1f1f1;
+    }
+
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
+    }
+    .topnav a {
+      color: #f2f2f2;
+      padding: 14px 16px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      color: #ffc000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+
+    .header {
+      position: relative;
+      background-image: url('./img/jabo.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+
+    ul, li {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .leftcolumn {
+      float: left;
+      width: 30%;
+      background-color: #f1f1f1;
+      padding-left: 120px;
+    }
+    .box {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      text-decoration-line: underline;
+      text-align: center;
+    }
+    .rightcolumn {
+      float: left;
+      width: 70%;
+      background-color: #f1f1f1;
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 0;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .footer {
+      background: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media screen and (max-width: 800px) {
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .header,
+      h1,
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 800px) {
+      h1 {
+        font-size: 48px;
+      }
+      .topnav {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="introduce.html">왕릉소개</a>
+    <a href="way.html">왕릉 순례</a>
+    <a href="cumu.html" class="active">대자보</a>
+    <a href="surport.html">왕릉 길라잡이</a>
+    <a href="namu.html">왕릉 잡학사전</a>
+  </div>
+
+  <header class="header">
+    <h1>왕릉 여행자들의 이야기</h1>
+  </header>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="box">
+        <h2 class="topbox">대자보</h2>
+        <ul>
+          <li>공지사항</li>
+          <li>탐방후기</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card" style="cursor: pointer;" onclick="location.href='cummunity.html'">
+        <h2>바쁜 강남 속 가장 느린 공간 선정릉</h2>
+        <img class="fakeimg" src="img/선정릉1.png" alt="선정릉" />
+        <p>선릉과 정릉</p>
+        <p>서울특별시 강남구 선릉로 100길</p>
+      </div>
+
+      <div class="card" style="cursor: pointer;" onclick="location.href='cummunity.html'">
+        <h2>삼배고두례의 주인공 인조</h2>
+        <img class="fakeimg" src="img/jang.jpg" alt="파주 장릉" />
+        <p>파주 장릉</p>
+        <p>경기도 파주시 탄현면 장릉로 90</p>
+      </div>
+
+      <div class="card" style="cursor: pointer;" onclick="location.href='cummunity.html'">
+        <h2>왕비들의 영면</h2>
+        <img class="fakeimg" src="img/태강릉.jpg" alt="태릉과 강릉" />
+        <p>태릉과 강릉</p>
+        <p>서울 노원구 화랑로 681</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+  </footer>
+</body>
+</html>

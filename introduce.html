@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왕릉 소개 - 조선왕릉 관광 가이드</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .topnav {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        }
+        .topnav a {
+        color: #f2f2f2;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        .topnav a.active {
+        color: #ffc000;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
+
+        .header {
+        position: relative;
+        background-image: url('./img/intro.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 6px #000;
+        }
+        .header h1 {
+        font-size: 48px;
+        margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+        background: #ddd;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+        }
+
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .header, h1, .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 800px){
+            h1{
+                font-size:50px;
+            }
+            .topnav{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="introduce.html" class="active">왕릉소개</a>
+    <a href="way.html">왕릉 순례</a>
+    <a href="cumu.html">대자보</a>
+    <a href="surport.html">왕릉 길라잡이</a>
+    <a href="namu.html">왕릉 잡학사전</a>
+  </div>
+
+    <div class="header">
+        <h1>조선왕릉 이야기</h1>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>조선왕릉이란?</h2>
+            <p>조선왕릉은 조선시대 왕과 왕비의 무덤으로, 총 40기가 현존하며 유네스코 세계유산으로 등재되어 있습니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>구리 동구릉</h2>
+            <img class="fakeimg" src="hong.jpg">
+            <p>동구릉은 조선 태조의 건원릉을 비롯해 9기의 왕릉이 모여 있는 국내 최대 규모의 능역입니다.</p>
+            <p>태조 이성계의 건원릉 외에도 수많은 왕과 왕비의 능이 모여 있으며, 조선 왕릉 중에서도 역사적으로 중요한 위치를 차지합니다.</p>
+        </div>
+
+        <div class="card">
+            <h2>기타 왕릉</h2>
+            <img class="fakeimg" src="hong.jpg">
+            <p>[이미지 자리] 파주 장릉</p>
+            <p>[이미지 자리] 남양주 광릉</p>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+    </footer>
+</body>
+</html>
