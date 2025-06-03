@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>대자보 - 선정릉 답사기</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      margin: 0;
+      background: #f1f1f1;
+    }
+
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
+    }
+    .topnav a {
+      color: #f2f2f2;
+      padding: 14px 16px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      color: #ffc000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .header {
+      position: relative;
+      background-image: url('./img/back_cumu_in.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .info-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    }
+    .info-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .info-section iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    .info-section ul {
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .footer {
+      background: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="topnav">
+    <a href="index2.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="introduce.html">왕릉소개</a>
+    <a href="way.html">왕릉 순례</a>
+    <a href="cumu2.html" class="active">대자보</a>
+    <a href="surport.html">왕릉 길라잡이</a>
+    <a href="namu.html">왕릉 잡학사전</a>
+  </div>
+
+
+  <header class="header">
+    <h1>선정릉 답사 후기</h1>
+  </header>
+
+
+  <main class="container">
+    <div class="card">
+      <img src="./img/sun_1.jpg"/>
+      <p>광활한 공간에 놓여진 웅장한 무덤으로 압도되는 느낌</p>
+    </div>
+    <div class="card">
+      <img src="./img/sun_2.jpg"/>
+      <p>건물 사이에 피어난 홍살문</p>
+    </div>
+    <div class="card">
+      <img src="./img/sun_3.jpg"/>
+      <p>어로(좌) : 임금님이 걷는 길</p>
+      <p>향로(우) : 혼령이 지나가는 길</p>
+    </div>
+    <div class="card">
+      <img src="./img/sun_4.jpg"/>
+      <p>정비를 한 탓인가, 벽이 희끗희끗하다</p>
+    </div>
+    <div class="card">
+      <img src="./img/sun_5.jpg"/>
+      <p>능역을 한 바퀴 도는 산책로는 사색하기에 아주 좋은 공간</p>
+    </div>
+  </main>
+
+    
+    <div class="container">
+        <img src="./img/map.PNG">
+        <ul>   
+            <li><strong>위치:</strong> 서울특별시 강남구 선릉로 100길 1</li>
+            <li><strong>전화:</strong> 02-568-1291</li>
+            <li><strong>관람시간:</strong> 09:00 ~ 18:00 (입장 마감 17:30)</li>
+            <li><strong>입장료:</strong> 성인 1,000원 / 청소년 및 어린이 무료</li>
+        </ul>
+    </div>
+    
+  <footer class="footer">
+    &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+  </footer>
+</body>
+</html>

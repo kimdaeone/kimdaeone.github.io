@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseon Tomb Guide</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        body {
+        font-family: 'Noto Sans KR', Arial, sans-serif;
+        margin: 0;
+        background: #f1f1f1;
+        }
+        
+        .topnav {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        }
+        .topnav a {
+        color: #f2f2f2;
+        padding: 14px 16px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        .topnav a.active {
+        color: #ffc000;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
+        .header {
+        position: relative;
+        background-image: url('./img/index_back.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 6px #000;
+        }
+        .header h1 {
+        font-size: 48px;
+        margin: 0;
+        }
+        .link{
+          overflow: hidden;
+            background-color: #333;
+            text-align: center;
+            object-fit: cover;
+            overflow:hidden;
+        }
+
+        .leftcolumn{
+            float: left;
+            width: 75%;
+            background-color: #f1f1f1;
+        }
+        .rightcolumn{
+            float:left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left:20px;
+        }
+
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding:0;
+        }
+        
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+        background: #ddd;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+        }
+
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .header, h1, .topnav a{
+                float: none;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 800px){
+            h1{
+                font-size:50px;
+            }
+            .topnav{
+                font-size: 20px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index2.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+        <a href="introduce.html">왕릉소개</a>
+        <a href="way.html">왕릉 순례</a>
+        <a href="cumu2.html">대자보</a>
+        <a href="surport.html">왕릉 길라잡이</a>
+        <a href="namu.html">왕릉 잡학사전</a>
+    </div>
+        <header class="header">
+        <h1>동쪽에 자리잡은 9개의 무덤 동구릉</h1>
+    </header>
+
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card" style="cursor: pointer;" onclick="location.href='cumu_4.html'">
+                <h2>대자보</h2>
+                <h4>바쁜 강남 속 가장 느린 공간 선정릉</h5>
+                <img class="fakeimg" src="img/선정릉1.png">
+                <p>선릉과 정릉</p>
+                <p>서울특별시 강남구 선릉로 100길</p>
+            </div>
+            <div class="card">
+                <h2>대자보</h2>
+                <h5>마음의 안식처 영릉</h5>
+                <img class="fakeimg" src="img/intro.jpg">
+                <p>영릉</p>
+                <p>경기도 여주시 세종대왕면 영릉로 269-50</p>
+            </div>
+        </div>
+        
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>정자각</h3>
+                <img class="fakeimg" src="img/jung.jpg">
+                <p>조선왕릉에서 제사를 지내는 정자각은 ‘丁’..</p>
+            </div>
+            <div class="card">
+                <h3>왕릉 잡학사전</h3>
+                <p>삼배고두례</p>
+                <img class="fakeimg" src="img/sam.jpg">
+
+            </div>
+            <div class="card">
+                <h3>이달의 왕릉</h3>
+                <p>태강릉</p>
+                <img class="fakeimg" src="img/태강릉.jpg">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
+    </footer>
+</body>
+</html>

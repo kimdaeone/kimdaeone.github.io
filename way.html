@@ -55,13 +55,46 @@
         .content {
             padding: 20px;
         }
+        .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
         .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            width: 400px;
-            margin-left: auto;
-            margin-right: auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+        width: 280px;       
+        padding: 20px;
+        cursor: pointer;
+        text-align: center;
+        }
+        .card:hover {
+        box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
+        }
+        .card img {
+        width: 80%;     
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 10px;  
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .card h3 {
+        margin: 0 0 10px 0;
+        font-size: 22px;
+        color: #333;
+        }
+        .card p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.4;
         }
         .fakeimg {
             background-color: #aaa;
@@ -96,6 +129,9 @@
                 float: none;
                 width: 100%;
             }
+            .card{
+                width: 40%;
+            }
         }
         @media screen and (min-width: 800px){
             h1{
@@ -109,10 +145,10 @@
 </head>
 <body>
   <div class="topnav">
-    <a href="index.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
+    <a href="index2.html"><img src="img/CI.png" height="20" alt="Logo" style="vertical-align: middle;"></a>
     <a href="introduce.html">왕릉소개</a>
     <a href="way.html" class="active">왕릉 순례</a>
-    <a href="cumu.html">대자보</a>
+    <a href="cumu2.html">대자보</a>
     <a href="surport.html">왕릉 길라잡이</a>
     <a href="namu.html">왕릉 잡학사전</a>
   </div>
@@ -132,25 +168,35 @@
             <option value="#">서울 헌인릉 (미구현)</option>
             <option value="#">서울 서오릉 (미구현)</option>
         </select>
+        <main class="container">
+            <div class="card">
+                <h2>동칼</h2>
+                <p>경기도 구리시 인창동 번지 1층 67-18</p>
+                <img class="fakeimg" src="img/cafeterria.jpg">
+                <p>동구릉 근처 소문난 구리 맛집 '동칼'</p>
+                <p>인당 평균 12,000원</p>
+                <p>(주차장 O) </p>
+            </div>
+            
+            <div class="card">
+                <h2>카페동구릉</h2>
+                <p>경기도 구리시 동구릉로 197-24</p>
+                <img class="fakeimg" src="img/cafe.jpg">
+                <p>감성 가득한 한옥카페</p>
+                <p>인당 평균 6,000원</p>
+                <p>(주차장 O) </p>
+            </div>
 
-        <div class="card">
-            <h2>카페동구릉</h2>
-            <img class="fakeimg" src="img/cafe.jpg">
-            <p>왕릉 인근에 위치한 조용하고 분위기 있는 카페를 소개합니다. 산책 후 휴식을 취하기 좋은 장소입니다.</p>
+            <div class="card">
+                <h2>조선왕릉 축전</h2>
+                <p>경기도 구리시 동구릉로 197-24</p>
+                <img class="fakeimg" src="img/chook.png">
+                <p>왕릉의 아름다운 자연과 건축물을 배경으로 인생샷을 남길 수 있는 장소를 추천합니다</p>
+                <p>인당 5,000~10,000원</p>
+                <p>(주차장 O) </p>
+            </div>
         </div>
-
-        <div class="card">
-            <h2>동칼</h2>
-            <img class="fakeimg" src="img/cafeterria.jpg">
-            <p>전통 한식부터 캐주얼 다이닝까지 다양한 식당 정보를 제공해 드립니다.</p>
-        </div>
-
-        <div class="card">
-            <h2>조선왕릉 축전</h2>
-            <img class="fakeimg" src="img/chook.png">
-            <p>왕릉의 아름다운 자연과 건축물을 배경으로 인생샷을 남길 수 있는 장소를 추천합니다.</p>
-        </div>
-    </div>
+    </main>
     <footer class="footer">
         &copy; 2025 조선왕릉 관광 가이드. All rights reserved.
     </footer>
